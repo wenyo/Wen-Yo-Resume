@@ -27,14 +27,14 @@
         left: 39.5px;
         top:0;
         bottom: 0;
-        box-shadow: 5px 5px 5px $color-sec;
+        box-shadow: 2px 2px 6px $color-fiv;
         z-index: 0;        
     }
     .circle{
         width: 28px;
         height: 28px;
         border-radius: 28px;
-        box-shadow: 5px 5px 5px $color-sec;
+        box-shadow: 2px 2px 6px $color-fiv;
         left: 27px;
         z-index: 3;
     }
@@ -49,7 +49,7 @@
     border-radius: 90px;
     border: 5px solid $color-for;
     background: $color-sec;
-    box-shadow: 5px 5px 5px $color-sec;
+    box-shadow: 2px 2px 6px $color-fiv;
     box-sizing: border-box; 
     position: absolute;
     z-index: 10;
@@ -64,10 +64,11 @@
     border: 5px solid $color-for;
     border-radius: 0 82px 82px 0;
     background: $color-master;
-    box-shadow: 5px 5px 5px $color-sec;
+    box-shadow: 2px 2px 6px $color-sec;
     position: absolute;
     left:41px;
     z-index: 0;
+    transition: 0.3s;
     @include pointer;
 }
 
@@ -82,5 +83,6 @@
     border-radius: 15px 15px 15px 2px;
     position: absolute;
     z-index: 3;
+    transition: 3s;
     left: 50%;
 }

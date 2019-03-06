@@ -5,7 +5,7 @@
     .content{
         background: url(../../images/banner.jpg);
         @include backgroundSetting;
-        background-position: bottom;
+        background-position: bottom center;
         height: 600px;
         max-width: 2000px;
         position: relative;

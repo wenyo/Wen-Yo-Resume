@@ -50,7 +50,7 @@ for(const key in skillData){
     
     skillTreeUL.innerHTML +=`
     <li>
-        <div class="skillItem ${key}">
+        <div class="skillItem  ${key}">
             <img src="${img}">
         </div>
         <div class="proficiency">${profiWord}</div>
@@ -71,18 +71,22 @@ for(const key in skillData){
 
 // AddEventListener
 const skillTreeLi = document.querySelectorAll('.skillTree>ul>li');
+const allProficiency = document.querySelectorAll('.proficiency');
 
 for(let i = 0; i < skillTreeLi.length; i++){
-    const liProficiency = skillTreeLi[i].querySelector('.proficiency');
+    const thisProficiency = skillTreeLi[i].querySelector('.proficiency');
 
-    liProficiency.addEventListener('mouseenter',function(e){
-        // 兄弟節點，取消Hover
-        const otherLi = this.parentNode.parentNode.children;
-        for(let i = 0; i < otherLi.length; i++){
-            otherLi[i].lastElementChild.style.display = 'none';
+    thisProficiency.addEventListener('mouseenter',function(e){
+        // 兄弟節點
+        for(let i = 0; i < skillTreeLi.length; i++){
+            //取消Hover & CSS
+            skillTreeLi[i].lastElementChild.style.display = 'none';
+            allProficiency[i].style.boxShadow = "2px 2px 6px #ededed";
         }
         //該節點，開啟Hover
         this.parentNode.lastElementChild.style.display = 'inline';
+        // CSS
+        this.style.boxShadow = "2px 2px 6px #8e8e8e";
     },false)
 };
 
