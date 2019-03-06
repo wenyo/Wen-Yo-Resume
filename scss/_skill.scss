@@ -1,0 +1,86 @@
+/**----Skill Start----**/
+
+#skill{
+    background: $color-sec;
+    .content{
+        background: url(../../images/skillBG.png);
+        @include backgroundSetting;
+        background-position: left;
+        //height: 600px;
+        max-width: 2000px;   
+    }
+}
+
+.skillTree{
+    position: relative;
+    margin-left: 10%;
+    &>ul{
+        padding: 50px 0;
+        li{
+        position: relative;
+        height: 82px;
+        padding: 16px 0;
+        }
+    }
+    .timeline{
+        width: 3px;
+        left: 39.5px;
+        top:0;
+        bottom: 0;
+        box-shadow: 5px 5px 5px $color-sec;
+        z-index: 0;        
+    }
+    .circle{
+        width: 28px;
+        height: 28px;
+        border-radius: 28px;
+        box-shadow: 5px 5px 5px $color-sec;
+        left: 27px;
+        z-index: 3;
+    }
+}
+.circleDown{
+    bottom: 0;
+}
+
+.skillItem{
+    width: 82px;
+    height: 82px;
+    border-radius: 90px;
+    border: 5px solid $color-for;
+    background: $color-sec;
+    box-shadow: 5px 5px 5px $color-sec;
+    box-sizing: border-box; 
+    position: absolute;
+    z-index: 10;
+}
+
+.proficiency{
+    height: 82px;
+    box-sizing: border-box; 
+    padding-left: 50px;
+    padding-top: 10px;
+    color: $color-thir;
+    border: 5px solid $color-for;
+    border-radius: 0 82px 82px 0;
+    background: $color-master;
+    box-shadow: 5px 5px 5px $color-sec;
+    position: absolute;
+    left:41px;
+    z-index: 0;
+    @include pointer;
+}
+
+
+.explain{
+    display: none;
+    transition: .3s;
+    padding: 20px 20px;
+    background: $color-sec;
+    color: $color-fiv;
+    box-shadow: 3px 3px 10px $color-fiv;
+    border-radius: 15px 15px 15px 2px;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+}

@@ -1,0 +1,25 @@
+/**----Basic Start----**/
+
+.content{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+h2{
+    font-size: $fntSiz-l;
+    letter-spacing: .3em;
+    color: $color-master;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 5px 5px $color-sec;
+    margin-bottom: 50px;
+}
+
+.circle,.timeline{
+    background: $color-for;
+    box-shadow: 5px 5px 5px $color-six;
+    position: absolute;
+}
+
+/**----Basic End----**/
