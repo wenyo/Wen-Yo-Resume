@@ -149,41 +149,43 @@ h2 {
 }
 
 .nameGithub {
-  display: inline;
+  display: inline-block;
   position: absolute;
   bottom: 5%;
   right: 35px;
-}
-
-.nameGithub .position {
-  position: relative;
-}
-
-.nameGithub span {
-  font-size: 18pt;
-  color: #1da3ac;
-  letter-spacing: .8em;
+  text-align: center;
+  box-align: center;
 }
 
 .nameGithub a {
-  background: url(../../images/github-logo.png);
-  width: 35px;
-  height: 35px;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: -55px;
-  top: -7px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  text-decoration: none;
+  color: #1da3ac;
+  padding: 3px 4px;
 }
 
 .nameGithub a:hover {
-  background: url(../../images/github-logo-black.png);
-  background-repeat: no-repeat;
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
+  color: #000;
 }
 
+.nameGithub a:hover > i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.nameGithub span {
+  letter-spacing: .8em;
+  margin-left: 10pt;
+  font-size: 20pt;
+}
+
+.nameGithub i {
+  font-size: 20pt;
+  padding-bottom: 3px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/**----Header End----**/
 #about {
   background: #1da3ac;
 }
@@ -356,4 +358,66 @@ h2 {
   transition: 3s;
   left: 50%;
 }
+
+/**----Work Start----**/
+.workExample {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+.workExample li {
+  width: 47%;
+  margin: 1%;
+  text-align: center;
+  position: relative;
+}
+
+.workExample li img {
+  -webkit-box-shadow: 2px 2px 6px #8e8e8e;
+          box-shadow: 2px 2px 6px #8e8e8e;
+}
+
+.workExample li .imgHover {
+  display: none;
+}
+
+.workExample .illustrate {
+  display: none;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.workExample h4 {
+  font-size: 18pt;
+  color: #8e8e8e;
+  line-height: 2em;
+}
+
+.workExample a {
+  text-decoration: none;
+  font-size: 20pt;
+  color: #8e8e8e;
+  padding: 0 5px;
+}
+
+.workExample a i {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.workExample a:hover > i {
+  color: #1b99a2;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/**----Work End----**/
 /*# sourceMappingURL=all.css.map */

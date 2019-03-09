@@ -58,31 +58,33 @@
 }
 
 .nameGithub{
-    display: inline;
+    display: inline-block;
     position: absolute;
     bottom: 5%;
     right: 35px;
-    .position{
-        position: relative;
-    }
-    span{
-        font-size: $fntSiz-s;
-        color: $color-master;
-        letter-spacing: .8em;
-    }
+    text-align: center;
+    box-align: center;
     a{
-        background: url(../../images/github-logo.png);
-        width: 35px;
-        height: 35px;
-        @include norepeat;
-        position: absolute;
-        left:-55px;
-        top:-7px;
-        transition: .5s;
+        text-decoration: none;
+        color: $color-master;
+        padding: 3px 4px;
         &:hover{
-            background: url(../../images/github-logo-black.png); 
-            @include norepeat;
-            transform: rotate(-360deg);
+            color:$color-sev;
+        }
+        &:hover>i{
+            transform:  rotate(360deg);
         }
     }
+    span{
+        letter-spacing: .8em;
+        margin-left: 10pt;
+        font-size: $fntSiz-m;
+    }
+    i{
+        font-size: $fntSiz-m;
+        padding-bottom: 3px;
+        transition: .3s;
+    }
 }
+
+/**----Header End----**/

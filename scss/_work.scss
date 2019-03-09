@@ -1,0 +1,45 @@
+/**----Work Start----**/
+
+.workExample{
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-content: stretch;   
+    li{
+        width: 47%;
+        margin: 1%;
+        text-align: center;
+        position: relative;
+        img{
+            box-shadow: 2px 2px 6px $color-fiv;
+        }
+        .imgHover{
+            display: none;
+        }
+    }
+    .illustrate{
+        display: none;
+        position: absolute;
+        top:35%;
+        width: 100%;
+    }
+    h4{
+        font-size: $fntSiz-s;
+        color: $color-fiv;
+        line-height: 2em;
+    }
+    a{
+        text-decoration: none;
+        font-size: $fntSiz-m;
+        color: $color-fiv;
+        padding: 0 5px;
+        i{
+            transition: .3s;
+        }
+        &:hover>i{
+            color: $color-six;
+            transform: rotate(360deg);
+        }
+    }
+
+}
+/**----Work End----**/
