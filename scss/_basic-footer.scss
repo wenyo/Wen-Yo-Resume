@@ -16,10 +16,26 @@ h2{
     margin-bottom: 50px;
 }
 
+h3{
+    font-size: $fntSiz-s;
+}
+h4{
+    font-size: $fntSiz-xs;
+}
+
 .circle,.timeline{
     background: $color-for;
     box-shadow: 2px 2px 6px $color-six;
     position: absolute;
 }
 
+.footer{
+    background: $color-master;
+    p{
+        text-align: center;
+        line-height: 1.5em;
+        font-size: $fntSiz-xs;
+        color: $color-sev;
+    }
+}
 /**----Basic End----**/

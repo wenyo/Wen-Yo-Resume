@@ -31,14 +31,12 @@
 .experience{
     display: inline-block;
     width: 50%;
-    //margin-top: 80px;
     margin-left: 100px;
     color: $color-for;
     li{
         position: relative;
         margin-bottom: 40px;
         h3{
-            font-size: $fntSiz-s;
             text-shadow: 5px 5px 5px $color-six;   
             margin-bottom: 10px;      
         }

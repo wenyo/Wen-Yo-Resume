@@ -104,18 +104,19 @@ const allProficiency = document.querySelectorAll('.proficiency');
 for(let i = 0; i < skillTreeLi.length; i++){
     const thisProficiency = skillTreeLi[i].querySelector('.proficiency');
 
+    //該節點，開啟Hover & CSS
     thisProficiency.addEventListener('mouseenter',function(e){
-        // 兄弟節點
+        this.parentNode.lastElementChild.style.display = 'inline';
+        this.style.boxShadow = "2px 2px 6px #8e8e8e";
+    },false);
+
+    // 兄弟節點，取消Hover & CSS
+    thisProficiency.addEventListener('mouseleave',function(e){
         for(let j = 0; j < skillTreeLi.length; j++){
-            //取消Hover & CSS
             skillTreeLi[j].lastElementChild.style.display = 'none';
             allProficiency[j].style.boxShadow = "2px 2px 6px #ededed";
         }
-        //該節點，開啟Hover
-        this.parentNode.lastElementChild.style.display = 'inline';
-        // CSS
-        this.style.boxShadow = "2px 2px 6px #8e8e8e";
-    },false)
+    },false);
 };
 
 //--** SkillTree End **--//
@@ -155,14 +156,19 @@ for(let i = 0; i < workExampleLi.length; i++){
     const imgHover = document.querySelectorAll('.imgHover');
     const illustrate = document.querySelectorAll('.illustrate');
 
+    //該節點，開啟Hover
     workExampleLi[i].addEventListener('mouseenter',function(e){
+        imgOrg[i].style.display = 'none';
+        imgHover[i].style.display = 'inline';
+        illustrate[i].style.display = 'inline';
+    },false);
+
+    // 兄弟節點，取消Hover
+    workExampleLi[i].addEventListener('mouseleave',function(e){
         for(let j = 0; j < workExampleLi.length; j++){
             imgOrg[j].style.display = 'inline';
             imgHover[j].style.display = 'none';
             illustrate[j].style.display = 'none';
         }
-        imgOrg[i].style.display = 'none';
-        imgHover[i].style.display = 'inline';
-        illustrate[i].style.display = 'inline';
-    },false)
+    },false);
 }

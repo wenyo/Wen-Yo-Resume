@@ -23,29 +23,36 @@
         top:35%;
         width: 100%;
     }
-    h4>a{
-        font-size: $fntSiz-s;
-        color: $color-fiv;
-        line-height: 2em;
-        padding: 3px 20px;
-        margin: 10px;
-        border-radius: 40px;
-        transition: .8s;
-        &:hover{
-            background: $color-six;
-            color: $color-for;
+    h4{
+        margin-bottom: 4px;
+        letter-spacing: .3em;
+            &>a{
+            color: $color-fiv;
+            line-height: 2em;
+            padding: 3px 20px;
+            border-radius: 40px;
+            transition: .8s;
+
+            &:hover{
+                text-shadow: 0 0 2px $color-thir;
+                color: $color-master;
+            }
         }
     }
     a{
         text-decoration: none;
-        font-size: $fntSiz-m;
+        margin: 0 4px;
+        font-size: $fntSiz-s;
         color: $color-fiv;
         i{
             transition: .8s;
             padding: 10px;
             border-radius: 45px;
+            box-sizing: border-box;
         }
         &:hover>i{
+            box-shadow: 0 0 5px $color-fiv;
+            border: none;
             transform: rotate(360deg);
             background: $color-six;
             color: $color-for;
