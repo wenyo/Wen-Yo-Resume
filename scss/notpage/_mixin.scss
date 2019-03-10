@@ -13,10 +13,6 @@
     cursor: pointer;
 }
 
-@mixin over-hidden {
-    overflow: hidden;
-}
-
 @mixin none {
     display: none;    
 }
@@ -29,4 +25,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+@mixin boxsize {
+    box-sizing: border-box;
 }

@@ -50,14 +50,14 @@
     border: 5px solid $color-for;
     background: $color-sec;
     box-shadow: 2px 2px 6px $color-fiv;
-    box-sizing: border-box; 
+    @include boxsize; 
     position: absolute;
     z-index: 10;
 }
 
 .proficiency{
     height: 82px;
-    box-sizing: border-box; 
+    @include boxsize;
     padding-left: 50px;
     padding-top: 10px;
     color: $color-thir;
