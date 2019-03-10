@@ -25,10 +25,7 @@ h4{
 .h2Line{
     width: 80px;
     height: 2px;
-    background: -webkit-linear-gradient(left,$color-for,$color-master);
-    background: -o-linear-gradient(left,$color-for,$color-master);
-    background: -moz-linear-gradient(left,$color-for,$color-master);
-    background: linear-gradient(left,$color-for,$color-master);
+    background-image: linear-gradient(left,$color-for,$color-master);
     margin: 20px auto;
     margin-bottom: 50px;
 }

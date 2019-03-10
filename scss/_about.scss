@@ -6,10 +6,7 @@
         text-shadow: 2px 2px 10px $color-six;
     }
     .h2Line{
-        background: -webkit-linear-gradient(left,$color-master,$color-fiv);
-        background: -o-linear-gradient(left,$color-master,$color-fiv);
-        background: -moz-linear-gradient(left,$color-master,$color-fiv);
-        background: linear-gradient(left,$color-master,$color-fiv);
+        background-image: linear-gradient(left,$color-master,$color-fiv);
     }
 }
 

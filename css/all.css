@@ -67,7 +67,7 @@ img {
 h2 {
   font-size: 24pt;
   letter-spacing: .2em;
-  color: #4d4c4c;
+  color: #616060;
   font-weight: bold;
   text-align: center;
   text-shadow: 2px 2px 10px #ededed;
@@ -84,8 +84,8 @@ h4 {
 .h2Line {
   width: 80px;
   height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#1da3ac));
-  background: linear-gradient(left, #fff, #1da3ac);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#1da3ac));
+  background-image: linear-gradient(left, #fff, #1da3ac);
   margin: 20px auto;
   margin-bottom: 50px;
 }
@@ -109,7 +109,7 @@ h4 {
   text-align: center;
   line-height: 1.5em;
   font-size: 14pt;
-  color: #4d4c4c;
+  color: #616060;
 }
 
 /**----Basic End----**/
@@ -165,10 +165,29 @@ h4 {
   text-shadow: 0 0 10px #1da3ac;
 }
 
+.intro {
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  width: 100%;
+}
+
+.intro h2 {
+  font-size: 45pt;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px #1da3ac;
+  color: #fff;
+}
+
+.intro p {
+  color: #1da3ac;
+}
+
 .nextPage {
   position: absolute;
   bottom: 5%;
-  right: 50%;
+  text-align: center;
+  width: 100%;
 }
 
 .nextPage a {
@@ -187,48 +206,7 @@ h4 {
 .nextPage i:hover {
   color: #fff;
   text-shadow: 0 0 10px #1da3ac;
-}
-
-.nameGithub {
-  display: inline-block;
-  position: absolute;
-  bottom: 5%;
-  right: 35px;
-  text-align: center;
-  box-align: center;
-}
-
-.nameGithub a {
-  text-decoration: none;
-  color: #1da3ac;
-  padding: 3px 4px;
-  -webkit-transition: .8s;
-  transition: .8s;
-}
-
-.nameGithub a:hover {
-  color: #fff;
-  text-shadow: 0 0 10px #1da3ac;
-}
-
-.nameGithub a:hover > i {
-  color: #fff;
-  text-shadow: 0 0 10px #1da3ac;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.nameGithub span {
-  letter-spacing: .8em;
-  margin-left: 10pt;
-  font-size: 20pt;
-}
-
-.nameGithub i {
-  font-size: 20pt;
-  padding-bottom: 3px;
-  -webkit-transition: .8s;
-  transition: .8s;
+  font-size: 36pt;
 }
 
 /**----Header End----**/
@@ -242,8 +220,8 @@ h4 {
 }
 
 #about .h2Line {
-  background: -webkit-gradient(linear, left top, right top, from(#1da3ac), to(#4d4c4c));
-  background: linear-gradient(left, #1da3ac, #4d4c4c);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1da3ac), to(#616060));
+  background-image: linear-gradient(left, #1da3ac, #616060);
 }
 
 .mypicName {
@@ -339,8 +317,8 @@ h4 {
   left: 39.5px;
   top: 0;
   bottom: 0;
-  -webkit-box-shadow: 2px 2px 6px #4d4c4c;
-          box-shadow: 2px 2px 6px #4d4c4c;
+  -webkit-box-shadow: 2px 2px 6px #616060;
+          box-shadow: 2px 2px 6px #616060;
   z-index: 0;
 }
 
@@ -348,8 +326,8 @@ h4 {
   width: 28px;
   height: 28px;
   border-radius: 28px;
-  -webkit-box-shadow: 2px 2px 6px #4d4c4c;
-          box-shadow: 2px 2px 6px #4d4c4c;
+  -webkit-box-shadow: 2px 2px 6px #616060;
+          box-shadow: 2px 2px 6px #616060;
   left: 27px;
   z-index: 3;
 }
@@ -364,8 +342,8 @@ h4 {
   border-radius: 90px;
   border: 5px solid #fff;
   background: #ededed;
-  -webkit-box-shadow: 2px 2px 6px #4d4c4c;
-          box-shadow: 2px 2px 6px #4d4c4c;
+  -webkit-box-shadow: 2px 2px 6px #616060;
+          box-shadow: 2px 2px 6px #616060;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
@@ -398,9 +376,9 @@ h4 {
   transition: .3s;
   padding: 20px 20px;
   background: #ededed;
-  color: #4d4c4c;
-  -webkit-box-shadow: 3px 3px 10px #4d4c4c;
-          box-shadow: 3px 3px 10px #4d4c4c;
+  color: #616060;
+  -webkit-box-shadow: 3px 3px 10px #616060;
+          box-shadow: 3px 3px 10px #616060;
   border-radius: 15px 15px 15px 2px;
   position: absolute;
   z-index: 3;
@@ -432,8 +410,8 @@ h4 {
 }
 
 .workExample li:hover {
-  -webkit-box-shadow: 2px 2px 6px #4d4c4c;
-          box-shadow: 2px 2px 6px #4d4c4c;
+  -webkit-box-shadow: 2px 2px 6px #616060;
+          box-shadow: 2px 2px 6px #616060;
 }
 
 .workExample li .imgHover {
@@ -453,7 +431,7 @@ h4 {
 }
 
 .workExample h4 > a {
-  color: #4d4c4c;
+  color: #616060;
   line-height: 2em;
   padding: 3px 20px;
   border-radius: 40px;
@@ -470,7 +448,7 @@ h4 {
   text-decoration: none;
   margin: 0 4px;
   font-size: 18pt;
-  color: #4d4c4c;
+  color: #616060;
 }
 
 .workExample a i {
@@ -483,8 +461,8 @@ h4 {
 }
 
 .workExample a:hover > i {
-  -webkit-box-shadow: 0 0 5px #4d4c4c;
-          box-shadow: 0 0 5px #4d4c4c;
+  -webkit-box-shadow: 0 0 5px #616060;
+          box-shadow: 0 0 5px #616060;
   border: none;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -494,17 +472,17 @@ h4 {
 
 /**----Work End----**/
 #contact {
-  background: #4d4c4c;
+  background: #616060;
 }
 
 #contact h2 {
   color: #fff;
-  text-shadow: 2px 2px 10px #4d4c4c;
+  text-shadow: 2px 2px 10px #616060;
 }
 
 #contact .h2Line {
-  background: -webkit-gradient(linear, left top, right top, from(#4d4c4c), to(#1da3ac));
-  background: linear-gradient(left, #4d4c4c, #1da3ac);
+  background-image: -webkit-gradient(linear, left top, right top, from(#616060), to(#1da3ac));
+  background-image: linear-gradient(left, #616060, #1da3ac);
 }
 
 #contact i {
@@ -517,6 +495,10 @@ h4 {
   color: #fff;
 }
 
+.contentMessage p {
+  padding: 3px 5px;
+}
+
 .contentMessage > div {
   width: 40%;
   margin: 0 2%;
@@ -526,21 +508,46 @@ h4 {
   display: inline-block;
 }
 
-.contentMessage > div .locate {
+.locate {
   margin-left: 2px;
   margin-right: 12px;
 }
 
-.contentMessage > div > div {
-  width: 100%;
+.derectionLine {
+  width: 99%;
   height: 1px;
-  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#1da3ac));
-  background: linear-gradient(left, #fff, #1da3ac);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#1da3ac));
+  background-image: linear-gradient(left, #fff, #1da3ac);
   margin: 10px  0;
 }
 
-.email > i {
-  color: #1da3ac;
+.personInfo {
+  position: relative;
+}
+
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.github a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 5px;
+  border: 1px solid #1da3ac;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.github a:hover {
+  color: #fff;
+  background: #1da3ac;
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
 }
 
 .contactForm {
@@ -567,7 +574,7 @@ h4 {
 .contactForm button {
   font-size: 12pt;
   letter-spacing: .05em;
-  background: #4d4c4c;
+  background: #616060;
   color: #fff;
   padding: 10px 20px 10px 18px;
   border-radius: 5px;

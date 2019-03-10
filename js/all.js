@@ -110,7 +110,7 @@ for(let i = 0; i < skillTreeLi.length; i++){
         this.style.boxShadow = "2px 2px 6px #8e8e8e";
     },false);
 
-    // 兄弟節點，取消Hover & CSS
+    // 離開節點，取消Hover & CSS
     thisProficiency.addEventListener('mouseleave',function(e){
         for(let j = 0; j < skillTreeLi.length; j++){
             skillTreeLi[j].lastElementChild.style.display = 'none';
@@ -163,7 +163,7 @@ for(let i = 0; i < workExampleLi.length; i++){
         illustrate[i].style.display = 'inline';
     },false);
 
-    // 兄弟節點，取消Hover
+    // 離開節點，取消Hover
     workExampleLi[i].addEventListener('mouseleave',function(e){
         for(let j = 0; j < workExampleLi.length; j++){
             imgOrg[j].style.display = 'inline';
