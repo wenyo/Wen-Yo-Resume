@@ -1,0 +1,26 @@
+
+.lanTab{
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px $color-fiv;
+    border: 30px solid $color-for;
+    td{
+        padding: 10px 20px;
+        margin: 20px;
+        border-bottom: 2px dashed $color-sec;
+    }
+    h3{
+        font-size: $fntSiz-xs;
+        color: $color-fiv;
+        line-height: $fntSiz-xl;
+    }
+    span{
+        font-size: $fntSiz-xxs;
+        color: $color-master;
+    }
+    i{
+        color: $color-master;
+        font-size: $fntSiz-xs;
+        margin-right: 5px;
+        text-shadow: 2px 2px 5px $color-sec;
+    }
+}

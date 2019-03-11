@@ -61,7 +61,7 @@ img {
 .content {
   max-width: 2000px;
   margin: 0 auto;
-  padding: 35px;
+  padding: 3%;
 }
 
 h2 {
@@ -124,7 +124,6 @@ h4 {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom center;
-  height: 600px;
   position: relative;
 }
 
@@ -168,8 +167,8 @@ h4 {
 .intro {
   text-align: center;
   position: absolute;
-  top: 75%;
-  width: 100%;
+  bottom: 10%;
+  width: 94%;
 }
 
 .intro h2 {
@@ -185,9 +184,9 @@ h4 {
 
 .nextPage {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   text-align: center;
-  width: 100%;
+  width: 94%;
 }
 
 .nextPage a {
@@ -227,9 +226,9 @@ h4 {
 .mypicName {
   display: inline-block;
   position: relative;
-  width: 320px;
+  width: 30%;
   height: 220px;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 
 .selfie {
@@ -247,8 +246,8 @@ h4 {
 
 .experience {
   display: inline-block;
-  width: 50%;
-  margin-left: 100px;
+  width: 45%;
+  margin-left: 9%;
   color: #fff;
 }
 
@@ -606,5 +605,36 @@ h4 {
   background: #000;
   -webkit-box-shadow: 2px 2px 10px #000;
           box-shadow: 2px 2px 10px #000;
+}
+
+.lanTab {
+  margin: 20px auto;
+  -webkit-box-shadow: 2px 2px 10px #616060;
+          box-shadow: 2px 2px 10px #616060;
+  border: 30px solid #fff;
+}
+
+.lanTab td {
+  padding: 10px 20px;
+  margin: 20px;
+  border-bottom: 2px dashed #ededed;
+}
+
+.lanTab h3 {
+  font-size: 14pt;
+  color: #616060;
+  line-height: 36pt;
+}
+
+.lanTab span {
+  font-size: 12pt;
+  color: #1da3ac;
+}
+
+.lanTab i {
+  color: #1da3ac;
+  font-size: 14pt;
+  margin-right: 5px;
+  text-shadow: 2px 2px 5px #ededed;
 }
 /*# sourceMappingURL=all.css.map */
