@@ -1,11 +1,11 @@
 /**----Skill Start----**/
 
 #skill{
-    background: $color-sec;
+    background: $color-thir;
     .content{
-        background: url(../../images/skillBG.png);
+        background: url(../../images/skillBG2.png);
         @include backgroundSetting;
-        background-position: left;
+        background-position: center;
         //height: 600px;
         max-width: 2000px;   
     }

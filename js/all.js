@@ -62,7 +62,24 @@ const workData = {
 
 //--** Header CSS Start **--//
 const banner = document.querySelector('.header .content');
-banner.style.height =  (window.screen.height - 200) + 'px';
+const screenHeight = window.screen.height;
+if(screenHeight > 750){
+    banner.style.height =  (window.screen.height - 130) + 'px';
+}else{
+    banner.style.height =  (window.screen.height) + 'px';
+}
+console.log(window.screen.height)
+// HamburderMenu
+const hambergerIcon = document.querySelector('.hambergerIcon');
+const menuUl = document.querySelector('.menu ul');
+
+hambergerIcon.addEventListener('click',function(e){
+    let strokes = document.querySelectorAll('.stroke');
+	for (let i = 0; i < strokes.length; i++) {
+		let stroke = strokes[i];
+        stroke.classList.toggle('open');}
+    menuUl.classList.toggle('hamburgerMenu');         
+},false)
 
 //--** Header CSS End **--//
 

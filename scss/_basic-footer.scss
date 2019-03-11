@@ -4,6 +4,7 @@
     max-width: 2000px;
     margin: 0 auto;
     padding: 3%;
+    @include boxsize;
 }
 
 h2{
