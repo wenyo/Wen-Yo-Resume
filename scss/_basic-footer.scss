@@ -5,6 +5,9 @@
     margin: 0 auto;
     padding: 3%;
     @include boxsize;
+    @include phone500(){
+        padding: 10% 3%;
+    }
 }
 
 h2{
@@ -39,6 +42,10 @@ h4{
     background: $color-for;
     box-shadow: 2px 2px 6px $color-six;
     position: absolute;
+}
+
+i{
+    margin-right: 10px;
 }
 
 .footer{
