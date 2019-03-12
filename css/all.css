@@ -66,6 +66,12 @@ img {
           box-sizing: border-box;
 }
 
+@media (max-width: 500px) {
+  .content {
+    padding: 10% 3%;
+  }
+}
+
 h2 {
   font-size: 24pt;
   letter-spacing: .2em;
@@ -101,6 +107,10 @@ h4 {
   -webkit-box-shadow: 2px 2px 6px #1b99a2;
           box-shadow: 2px 2px 6px #1b99a2;
   position: absolute;
+}
+
+i {
+  margin-right: 10px;
 }
 
 .footer {
@@ -337,30 +347,23 @@ h4 {
   background-image: linear-gradient(left, #1da3ac, #616060);
 }
 
-.mypicName {
-  display: inline-block;
-  position: relative;
-  width: 30%;
-  height: 220px;
-  margin-bottom: 10%;
-}
-
-.selfie {
-  position: absolute;
-  left: 60px;
-  z-index: 0;
-}
-
-.myname {
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  bottom: -20px;
-}
-
 .experience {
-  display: inline-block;
-  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 5%;
+}
+
+.experience ul {
   margin-left: 9%;
   color: #fff;
 }
@@ -370,12 +373,24 @@ h4 {
   margin-bottom: 40px;
 }
 
-.experience li h3 {
-  text-shadow: 5px 5px 5px #1b99a2;
-  margin-bottom: 10px;
+.experience h3 {
+  display: inline-block;
+  color: #616060;
+  margin-bottom: 7px;
+  padding: 7px 10px;
+  -webkit-box-shadow: 5px 5px 5px #1b99a2;
+          box-shadow: 5px 5px 5px #1b99a2;
+  border-radius: 1px 7px 7px 7px;
+  background: #cadee1;
 }
 
-.experience li p {
+.experience span {
+  display: block;
+  color: #cadee1;
+  letter-spacing: .08em;
+}
+
+.experience p {
   font-size: 14pt;
   line-height: 2em;
 }
@@ -385,6 +400,7 @@ h4 {
   height: 23px;
   border-radius: 23px;
   left: -50px;
+  top: -2px;
   z-index: 2;
 }
 
@@ -394,6 +410,43 @@ h4 {
   bottom: -40px;
   left: -40px;
   z-index: 0;
+}
+
+@media (max-width: 700px) {
+  .experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .experience ul {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+}
+
+.mypicName {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  position: relative;
+  width: 286px;
+  margin-top: 3%;
+}
+
+@media (max-width: 900px) {
+  .mypicName {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  .mypicName {
+    margin-top: 0;
+  }
 }
 
 /**----Skill Start----**/
@@ -598,10 +651,6 @@ h4 {
   background-image: linear-gradient(left, #616060, #1da3ac);
 }
 
-#contact i {
-  margin-right: 10px;
-}
-
 .contentMessage {
   float: right;
   width: 100%;
@@ -721,8 +770,10 @@ h4 {
           box-shadow: 2px 2px 10px #000;
 }
 
+/**----Language Start----**/
 .lanTab {
   margin: 20px auto;
+  background: #fff;
   -webkit-box-shadow: 2px 2px 10px #616060;
           box-shadow: 2px 2px 10px #616060;
   border: 30px solid #fff;
@@ -751,4 +802,19 @@ h4 {
   margin-right: 5px;
   text-shadow: 2px 2px 5px #ededed;
 }
+
+@media (max-width: 500px) {
+  .lanTab {
+    border: 20px solid #fff;
+  }
+  .lanTab td {
+    padding: 10px 0px;
+  }
+  .lanTab i {
+    font-size: 12pt;
+    margin-right: 0;
+  }
+}
+
+/**----Language End----**/
 /*# sourceMappingURL=all.css.map */

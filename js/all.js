@@ -68,7 +68,6 @@ if(screenHeight > 750){
 }else{
     banner.style.height =  (window.screen.height) + 'px';
 }
-console.log(window.screen.height)
 // HamburderMenu
 const hambergerIcon = document.querySelector('.hambergerIcon');
 const menuUl = document.querySelector('.menu ul');

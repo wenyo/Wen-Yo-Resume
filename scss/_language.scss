@@ -1,6 +1,8 @@
+/**----Language Start----**/
 
 .lanTab{
     margin: 20px auto;
+    background: $color-for;
     box-shadow: 2px 2px 10px $color-fiv;
     border: 30px solid $color-for;
     td{
@@ -23,4 +25,16 @@
         margin-right: 5px;
         text-shadow: 2px 2px 5px $color-sec;
     }
+    @include phone500(){
+        border: 20px solid $color-for;
+        td{
+            padding: 10px 0px;
+        }
+        i{
+            font-size: $fntSiz-xxs;
+            margin-right: 0;
+        }
+    }
 }
+
+/**----Language End----**/
