@@ -3,7 +3,8 @@ const skillData = {
     'HTML':{
         'skillItemimg' : './images/html-logo.png',
         'proficiency' : 'master',
-        'percentage' : '70%',
+        'percentage': '70%',
+        'percentagePhone' : '80%',
         'profiWord' : 'HTML / HTML5 ( 擅長 )',
         'explain' : '能有效率的使用語意化標籤。'
     },
@@ -11,6 +12,7 @@ const skillData = {
         'skillItemimg' : './images/css-logo.png',
         'proficiency' : 'familiar',
         'percentage' : '60%',
+        'percentagePhone' :'70%',
         'profiWord' : 'CSS 3 / SCSS ( 熟悉 )',
         'explain' : '能撰寫語意化標籤、排版、flexbox。' 
     },
@@ -18,6 +20,7 @@ const skillData = {
         'skillItemimg' : './images/rwd-logo.png',
         'proficiency' : 'familiar',
         'percentage' : '60%',
+        'percentagePhone' :'70%',
         'profiWord' : 'Responsive Web Design ( 熟悉 )',
         'explain' : '能手刻出自適應網頁設計。' 
     },
@@ -25,6 +28,7 @@ const skillData = {
         'skillItemimg' : './images/javascript-logo.png',
         'proficiency' : 'familiar',
         'percentage' : '60%',
+        'percentagePhone' :'70%',
         'profiWord' : 'JavaScript ( 熟悉 )',
         'explain' : '熟悉DOM模組、 this 、閉包、 AJAX等概念。' 
     },
@@ -32,6 +36,7 @@ const skillData = {
         'skillItemimg' : './images/vue-logo.png',
         'proficiency' : 'common',
         'percentage' : '30%',
+        'percentagePhone' :'50%',
         'profiWord' : 'Vue.js ( 略懂 )',
         'explain' : '初步學習  v-model、v-on等。' 
     },
@@ -62,12 +67,8 @@ const workData = {
 
 //--** Header CSS Start **--//
 const banner = document.querySelector('.header .content');
-const screenHeight = window.screen.height;
-if(screenHeight > 750){
-    banner.style.height =  (window.screen.height - 130) + 'px';
-}else{
-    banner.style.height =  (window.screen.height) + 'px';
-}
+banner.style.height =  (document.documentElement.clientHeight) + 'px';
+
 // HamburderMenu
 const hambergerIcon = document.querySelector('.hambergerIcon');
 const menuUl = document.querySelector('.menu ul');
