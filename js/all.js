@@ -3,41 +3,41 @@ const skillData = {
     'HTML':{
         'skillItemimg' : './images/html-logo.png',
         'proficiency' : 'master',
-        'percentage': '70%',
+        'percentage': '60%',
         'percentagePhone' : '80%',
-        'profiWord' : 'HTML / HTML5 ( 擅長 )',
+        'profiWord' : 'HTML / HTML5<br>( 擅長 )',
         'explain' : '能有效率的使用語意化標籤。'
     },
     'CSS':{
         'skillItemimg' : './images/css-logo.png',
         'proficiency' : 'familiar',
-        'percentage' : '60%',
+        'percentage' : '50%',
         'percentagePhone' :'70%',
-        'profiWord' : 'CSS 3 / SCSS ( 熟悉 )',
+        'profiWord' : 'CSS 3 / SCSS<br>( 熟悉 )',
         'explain' : '能撰寫語意化標籤、排版、flexbox。' 
     },
     'RWD':{
         'skillItemimg' : './images/rwd-logo.png',
         'proficiency' : 'familiar',
-        'percentage' : '60%',
+        'percentage' : '50%',
         'percentagePhone' :'70%',
-        'profiWord' : 'Responsive Web Design ( 熟悉 )',
+        'profiWord' : 'RWD<br>( 熟悉 )',
         'explain' : '能手刻出自適應網頁設計。' 
     },
     'JavaScript':{
         'skillItemimg' : './images/javascript-logo.png',
         'proficiency' : 'familiar',
-        'percentage' : '60%',
+        'percentage' : '50%',
         'percentagePhone' :'70%',
-        'profiWord' : 'JavaScript ( 熟悉 )',
+        'profiWord' : 'JavaScript<br>( 熟悉 )',
         'explain' : '熟悉DOM模組、 this 、閉包、 AJAX等概念。' 
     },
     'Vue.js':{
         'skillItemimg' : './images/vue-logo.png',
         'proficiency' : 'common',
-        'percentage' : '30%',
+        'percentage' : '20%',
         'percentagePhone' :'50%',
-        'profiWord' : 'Vue.js ( 略懂 )',
+        'profiWord' : 'Vue.js<br>( 略懂 )',
         'explain' : '初步學習  v-model、v-on等。' 
     },
 }
@@ -105,12 +105,17 @@ for(const key in skillData){
     const proficiencyClazz = document.querySelectorAll('.proficiency');
     const explainClazz = document.querySelectorAll('.explain');
 
-    for(let i = 0 ; i < proficiencyClazz.length ; i++ ){
-        proficiencyClazz[i].style.width += skillData[key].percentage;
-        explainClazz[i].style.left += skillData[key].percentage;
+    if(document.documentElement.clientWidth > 500){
+        for(let i = 0 ; i < proficiencyClazz.length ; i++ ){
+            proficiencyClazz[i].style.width += skillData[key].percentage;
+            explainClazz[i].style.left += skillData[key].percentage;
+        }
+    }else{
+        for(let i = 0 ; i < proficiencyClazz.length ; i++ ){
+            proficiencyClazz[i].style.width += skillData[key].percentagePhone;
+        }
     }
 }
-
 // AddEventListener 
 const skillTreeLi = document.querySelectorAll('.skillTree>ul>li');
 const allProficiency = document.querySelectorAll('.proficiency');
@@ -118,18 +123,28 @@ const allProficiency = document.querySelectorAll('.proficiency');
 for(let i = 0; i < skillTreeLi.length; i++){
     const thisProficiency = skillTreeLi[i].querySelector('.proficiency');
 
-    thisProficiency.addEventListener('mouseenter',function(e){
-        //該節點，開啟Hover & CSS
-        this.parentNode.lastElementChild.style.display = 'inline';
-        this.style.boxShadow = "2px 2px 6px #8e8e8e";
-    },false);
-    thisProficiency.addEventListener('mouseleave',function(e){
-        // 離開節點，取消Hover & CSS
-        for(let j = 0; j < skillTreeLi.length; j++){
-            skillTreeLi[j].lastElementChild.style.display = 'none';
-            allProficiency[j].style.boxShadow = "2px 2px 6px #ededed";
-        }
-    },false)
+    // clientWidth(500px)
+    if(document.documentElement.clientWidth > 500){
+        thisProficiency.addEventListener('mouseenter',function(e){
+            //該節點，開啟Hover & CSS
+            thisProficiency.parentElement.className='skillActive';
+        },false);
+        thisProficiency.addEventListener('mouseleave',function(e){
+            // 取消全部的 Hover
+            for(let j = 0;j < skillTreeLi.length;j++){
+                skillTreeLi[j].className = '';
+            }
+        },false);
+    }else{
+        thisProficiency.addEventListener('click',function(e){
+            // 取消全部的 Hover
+            for(let j = 0;j < skillTreeLi.length;j++){
+                skillTreeLi[j].className = '';
+            }
+            //該節點，開啟Hover & CSS
+            thisProficiency.parentElement.classList ='skillActive';
+        },false);
+    }
 };
 
 //--** SkillTree End **--//

@@ -38,6 +38,25 @@
         left: 27px;
         z-index: 3;
     }
+    // Hover & Click .proficiency
+    .skillActive{
+        .proficiency{
+            box-shadow: 2px 2px 6px $color-fiv;
+        }
+        .explain{
+            display: inline-block;
+        }
+    }
+    @include phone500(){
+        margin-left: 2%;
+        .skillActive{
+        height: 120px;}
+        .explain{
+            top: 85px;
+            left: 80px;
+            border-radius: 0px 15px 15px 15px;
+        }
+    }
 }
 .circleDown{
     bottom: 0;
@@ -57,9 +76,11 @@
 
 .proficiency{
     height: 82px;
+    font-size: $fntSiz-xxs;
+    line-height: 1.5em;
     @include boxsize;
     padding-left: 50px;
-    padding-top: 10px;
+    padding-top: 5px;
     color: $color-thir;
     border: 5px solid $color-for;
     border-radius: 0 82px 82px 0;
@@ -72,17 +93,17 @@
     @include pointer;
 }
 
-
 .explain{
+    font-size: $fntSiz-xxs;
+    line-height: 1.5em;
     display: none;
     transition: .3s;
-    padding: 20px 20px;
+    padding: 10px 15px;
     background: $color-sec;
     color: $color-fiv;
     box-shadow: 3px 3px 10px $color-fiv;
     border-radius: 15px 15px 15px 2px;
     position: absolute;
     z-index: 3;
-    transition: 3s;
-    left: 50%;
+    transition: .5s;
 }
