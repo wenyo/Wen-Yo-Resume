@@ -107,12 +107,9 @@ for(const key in skillData){
 
     for(let i = 0 ; i < proficiencyClazz.length ; i++ ){
         proficiencyClazz[i].style.width += skillData[key].percentage;
-    }
-
-    for(let i = 0 ; i < explainClazz.length ; i++ ){
         explainClazz[i].style.left += skillData[key].percentage;
     }
-}
+};
 
 // AddEventListener 
 const skillTreeLi = document.querySelectorAll('.skillTree>ul>li');
@@ -121,18 +118,15 @@ const allProficiency = document.querySelectorAll('.proficiency');
 for(let i = 0; i < skillTreeLi.length; i++){
     const thisProficiency = skillTreeLi[i].querySelector('.proficiency');
 
-    //該節點，開啟Hover & CSS
     thisProficiency.addEventListener('mouseenter',function(e){
-        this.parentNode.lastElementChild.style.display = 'inline';
-        this.style.boxShadow = "2px 2px 6px #8e8e8e";
-    },false);
-
-    // 離開節點，取消Hover & CSS
-    thisProficiency.addEventListener('mouseleave',function(e){
+        // 離開節點，取消Hover & CSS
         for(let j = 0; j < skillTreeLi.length; j++){
             skillTreeLi[j].lastElementChild.style.display = 'none';
             allProficiency[j].style.boxShadow = "2px 2px 6px #ededed";
         }
+        //該節點，開啟Hover & CSS
+        this.parentNode.lastElementChild.style.display = 'inline';
+        this.style.boxShadow = "2px 2px 6px #8e8e8e";
     },false);
 };
 
