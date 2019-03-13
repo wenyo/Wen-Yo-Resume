@@ -105,7 +105,7 @@ for(const key in skillData){
     const proficiencyClazz = document.querySelectorAll('.proficiency');
     const explainClazz = document.querySelectorAll('.explain');
 
-    if(document.documentElement.clientWidth > 500){
+    if(document.documentElement.clientWidth > 700){
         for(let i = 0 ; i < proficiencyClazz.length ; i++ ){
             proficiencyClazz[i].style.width += skillData[key].percentage;
             explainClazz[i].style.left += skillData[key].percentage;
@@ -124,7 +124,7 @@ for(let i = 0; i < skillTreeLi.length; i++){
     const thisProficiency = skillTreeLi[i].querySelector('.proficiency');
 
     // clientWidth(500px)
-    if(document.documentElement.clientWidth > 500){
+    if(document.documentElement.clientWidth > 700){
         thisProficiency.addEventListener('mouseenter',function(e){
             //該節點，開啟Hover & CSS
             thisProficiency.parentElement.className='skillActive';

@@ -47,7 +47,7 @@
             display: inline-block;
         }
     }
-    @include phone500(){
+    @include pc700(){
         margin-left: 2%;
         .skillActive{
         height: 120px;}
