@@ -3,7 +3,7 @@
 .header{
     background: $color-sec;
     .content{
-        background: url(../../images/banner2.jpg);
+        background: url(../../images/banner-phone.jpg);
         @include backgroundSetting;
         background-position: bottom center;
         position: relative;
