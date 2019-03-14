@@ -70,7 +70,7 @@
         &:hover{
             color: $color-for;
             background: $color-master;
-            box-shadow: 2px 2px 10px $color-sev;
+            box-shadow: 1px 1px 3px $color-fiv inset,1px 1px 3px $color-sev;
         }
     }
 }
@@ -107,7 +107,7 @@
         transition: 1s;
         &:hover{
             background: $color-master;
-            box-shadow: 2px 2px 10px $color-sev;
+            box-shadow: 1px 1px 3px $color-fiv inset,1px 1px 3px $color-sev;
         }
     }
     .reset{
@@ -116,7 +116,7 @@
         float: right;
         &:hover{
             background: $color-sev;
-            box-shadow: 2px 2px 10px $color-sev; 
+            box-shadow: 1px 1px 5px $color-for inset,1px 1px 5px $color-sev; 
         }
     }
     @include pc800(){
