@@ -700,7 +700,9 @@ i {
 }
 
 .contentMessage {
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   color: #fff;
 }
@@ -710,12 +712,36 @@ i {
 }
 
 .contentMessage > div {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   width: 40%;
   margin: 0 2%;
   font-size: 14pt;
   line-height: 2em;
   letter-spacing: .05em;
-  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .contentMessage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contentMessage > div {
+    width: 70%;
+    margin: 0 0 5% 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .contentMessage > div {
+    width: 100%;
+  }
 }
 
 .locate {
@@ -761,7 +787,9 @@ i {
 }
 
 .contactForm {
-  float: right;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   margin: 0 2%;
   width: 50%;
 }
@@ -816,6 +844,18 @@ i {
   background: #000;
   -webkit-box-shadow: 2px 2px 10px #000;
           box-shadow: 2px 2px 10px #000;
+}
+
+@media (max-width: 800px) {
+  .contactForm {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactForm {
+    width: 100%;
+  }
 }
 
 /**----Language Start----**/

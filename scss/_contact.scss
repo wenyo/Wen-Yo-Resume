@@ -11,19 +11,32 @@
 }
 
 .contentMessage{
-    float: right;
+    display: flex;
     width: 100%;
     color: $color-for;
     p{
         padding: 3px 5px;
     }
     &>div{
+        flex-grow: 0;
         width: 40%;
         margin: 0 2%;
         font-size: $fntSiz-xs;
         line-height: 2em;
         letter-spacing: .05em;
-        display: inline-block;
+    }
+    @include pc800(){
+        flex-direction: column;
+        align-items: center;
+        &>div{
+            width: 70%;
+            margin:0 0 5% 0;
+        }
+    }
+    @include phone500(){
+        &>div{
+            width: 100%;
+        }
     }
 }
 .locate{
@@ -64,7 +77,7 @@
 
 
 .contactForm{
-    float: right;    
+    flex-grow: 0;
     margin: 0 2%;
     width: 50%;
     input,textarea{
@@ -105,6 +118,12 @@
             background: $color-sev;
             box-shadow: 2px 2px 10px $color-sev; 
         }
+    }
+    @include pc800(){
+        width: 70%;
+    }
+    @include phone500(){
+        width: 100%;
     }
 }
 
