@@ -3,14 +3,12 @@
 .workExample{
     display: inline-flex;
     flex-flow: row wrap;
-    align-content: stretch;   
     li{
         width: 47%;
         margin: 1%;
         text-align: center;
         position: relative;
-        transition: 1s;
-        &:hover{
+        &:mhover,&:active{
             box-shadow: 2px 2px 6px $color-fiv;
         }
         .imgHover{
@@ -32,7 +30,7 @@
             padding: 3px 20px;
             border-radius: 40px;
             transition: .8s;
-            &:hover{
+            &:hover,&:active{
                 text-shadow: 0 0 2px $color-thir;
                 color: $color-master;
             }
@@ -40,12 +38,14 @@
     }
     a{
         text-decoration: none;
+        padding: 3px;
         margin: 0 4px;
         font-size: $fntSiz-s;
         color: $color-fiv;
         i{
             transition: .8s;
             padding: 10px;
+            margin: 0;
             border-radius: 45px;
             @include boxsize;
         }
@@ -57,6 +57,22 @@
             color: $color-for;
         }
     }
-
+    @include pc900(){
+        margin: 0 auto;
+        flex-flow: column;
+        li{
+            width: 100%;
+            margin: 3% 0;
+        }
+    }
+    @include phone500(){
+        .illustrate{
+            top: 25%;
+            h4{
+                font-size: $fntSiz-xxs;
+                letter-spacing: .1em;
+            }
+        }
+    }
 }
 /**----Work End----**/

@@ -72,9 +72,9 @@ banner.style.height =  (document.documentElement.clientHeight) + 'px';
 // HamburderMenu
 const hambergerIcon = document.querySelector('.hambergerIcon');
 const menuUl = document.querySelector('.menu ul');
+const strokes = document.querySelectorAll('.stroke');
 
 hambergerIcon.addEventListener('click',function(e){
-    let strokes = document.querySelectorAll('.stroke');
 	for (let i = 0; i < strokes.length; i++) {
 		let stroke = strokes[i];
         stroke.classList.toggle('open');}
@@ -165,12 +165,8 @@ for(const key in workData){
     <li class=${key}>
         <div class="illustrate">
             <h4><a href="${web}">${name}</a></h4>
-            <a href="${github}" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="${web}" target="_blank">
-                <i class="fas fa-link"></i>
-            </a>
+            <a href="${github}" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="${web}" target="_blank"><i class="fas fa-link"></i></a>
         </div>
         <img class="imgOrg" src="${img}" alt="">
         <img class="imgHover" src="${imgHover}" alt="">
