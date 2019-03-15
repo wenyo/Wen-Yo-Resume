@@ -3,10 +3,14 @@
 .header{
     background: $color-sec;
     .content{
-        background: url(../../images/banner-phone.jpg);
+        background: url(../../images/banner.jpg);
         @include backgroundSetting;
         background-position: bottom center;
         position: relative;
+        @include phone500(){
+            background: url(../../images/banner-phone.jpg);
+            background-position: center;
+        }
     }
 }
 

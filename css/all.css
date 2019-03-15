@@ -131,12 +131,19 @@ i {
 }
 
 .header .content {
-  background: url(../../images/banner-phone.jpg);
+  background: url(../../images/banner.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom center;
   position: relative;
+}
+
+@media (max-width: 500px) {
+  .header .content {
+    background: url(../../images/banner-phone.jpg);
+    background-position: center;
+  }
 }
 
 .logo a {
@@ -461,6 +468,13 @@ i {
   background-size: cover;
   background-position: center;
   max-width: 2000px;
+}
+
+@media (max-width: 500px) {
+  #skill .content {
+    background: url(../../images/skillBG-phone.png);
+    background-position: center;
+  }
 }
 
 .skillTree {

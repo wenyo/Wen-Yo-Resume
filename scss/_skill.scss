@@ -6,8 +6,11 @@
         background: url(../../images/skillBG.png);
         @include backgroundSetting;
         background-position: center;
-        //height: 600px;
         max-width: 2000px;   
+        @include phone500(){
+            background: url(../../images/skillBG-phone.png);
+            background-position: center;
+        }
     }
 }
 
