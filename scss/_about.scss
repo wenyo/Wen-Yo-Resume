@@ -15,12 +15,12 @@
 .experience{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: space-around;
     padding: 0 5%;
     ul{
-    margin-left: 9%;
-    color: $color-for;   
+        margin-left: 9%;
+        color: $color-fiv;
     }
     li{
         position: relative;
@@ -28,7 +28,7 @@
     }
     h3{
         display: inline-block;
-        color: $color-fiv;
+        color: $color-sec;
         margin-bottom: 7px;
         padding: 7px 10px;
         box-shadow: 5px 5px 5px $color-six;  
@@ -36,9 +36,9 @@
         background: $color-thir;  
     }
         span{
-        display: block;
-        color: $color-thir;
-        letter-spacing: .08em;
+            display: block;
+            color: $color-thir;
+            letter-spacing: .08em;
         }
     p{
         font-size: $fntSiz-xs;
@@ -71,12 +71,13 @@
 }
 
 .mypicName{
-    flex-grow: 0;
-    position: relative;
-    width: 286px;
-    margin-top: 3%;
+    margin-bottom: 150px;
+    img{
+        width: 286px;
+    }
     @include pc900(){
         margin-top: 10%;
+        margin-bottom: 10%;
     }
     @include pc700(){
         margin-top:0;

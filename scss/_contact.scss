@@ -12,6 +12,7 @@
 
 .contentMessage{
     display: flex;
+    justify-content: center;
     width: 100%;
     color: $color-for;
     p{
@@ -19,7 +20,7 @@
     }
     &>div{
         flex-grow: 0;
-        width: 40%;
+        width: 90%;
         margin: 0 2%;
         font-size: $fntSiz-xs;
         line-height: 2em;

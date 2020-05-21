@@ -3,13 +3,13 @@
 .header{
     background: $color-sec;
     .content{
-        background: url(../../images/banner.jpg);
+        background: url(../../images/banner3.jpg);
         @include backgroundSetting;
-        background-position: bottom center;
+        background-position: top center;
         position: relative;
         @include phone500(){
-            background: url(../../images/banner-phone.jpg);
-            background-position: center;
+            background: url(../../images/banner3.jpg);
+            background-position: inherit;
         }
     }
 }
@@ -27,28 +27,32 @@
 }
 
 .menu{
+    position: fixed;
+    right: 0;
+    z-index: 10;
     display: flex;
     align-items: flex-end;
     ul{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row; 
-        margin-top: 8px;     
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row; 
         }
     li{
         flex-grow:0;
-        padding-left:10px;
         a{
             text-decoration: none;
             font-size: $fntSiz-m;
             font-weight: bolder;
             padding: 3px 12px;
-            color: $color-master;
+            color: $color-thir;
             transition: .5s;
+            padding: 10px 20px;
+            background-color: $color-8;
             &:hover,&:active{
                 color: $color-for;
                 text-shadow: 0 0 10px $color-master;
+                background-color: $color-thir;
             }
         }
     }    
@@ -67,7 +71,7 @@
     width: 30px;
     margin: 3px 0;
     border-radius: 1px;
-    background: $color-master;
+    background: $color-thir;
     transition: transform .5s;
 }
 
@@ -104,6 +108,7 @@
             text-align: right;
             a{
                 font-size: $fntSiz-s;
+                background-color:unset ;
             }
         }
         .hamburgerMenu{

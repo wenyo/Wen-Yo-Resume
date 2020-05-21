@@ -79,10 +79,10 @@ img {
 h2 {
   font-size: 24pt;
   letter-spacing: .2em;
-  color: #616060;
+  color: #605e5e;
   font-weight: bold;
   text-align: center;
-  text-shadow: 2px 2px 10px #ededed;
+  text-shadow: 2px 2px 10px #dbeaf8;
 }
 
 h3 {
@@ -96,10 +96,11 @@ h4 {
 .h2Line {
   width: 80px;
   height: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#1da3ac));
-  background-image: linear-gradient(left, #fff, #1da3ac);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#035272));
+  background-image: linear-gradient(left, #fff, #035272);
   margin: 20px auto;
   margin-bottom: 50px;
+  border-radius: 2px;
 }
 
 .clear {
@@ -108,8 +109,8 @@ h4 {
 
 .circle, .timeline {
   background: #fff;
-  -webkit-box-shadow: 2px 2px 6px #1b99a2;
-          box-shadow: 2px 2px 6px #1b99a2;
+  -webkit-box-shadow: 2px 2px 6px #587e88;
+          box-shadow: 2px 2px 6px #587e88;
   position: absolute;
 }
 
@@ -125,28 +126,28 @@ i {
   text-align: center;
   line-height: 1.5em;
   font-size: 14pt;
-  color: #616060;
+  color: #605e5e;
 }
 
 /**----Basic End----**/
 /**----Header----**/
 .header {
-  background: #ededed;
+  background: #dbeaf8;
 }
 
 .header .content {
-  background: url(../../images/banner.jpg);
+  background: url(../../images/banner3.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: bottom center;
+  background-position: top center;
   position: relative;
 }
 
 @media (max-width: 500px) {
   .header .content {
-    background: url(../../images/banner-phone.jpg);
-    background-position: center;
+    background: url(../../images/banner3.jpg);
+    background-position: inherit;
   }
 }
 
@@ -163,6 +164,9 @@ i {
 }
 
 .menu {
+  position: fixed;
+  right: 0;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,14 +187,12 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 8px;
 }
 
 .menu li {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  padding-left: 10px;
 }
 
 .menu li a {
@@ -198,14 +200,17 @@ i {
   font-size: 20pt;
   font-weight: bolder;
   padding: 3px 12px;
-  color: #1da3ac;
+  color: #035272;
   -webkit-transition: .5s;
   transition: .5s;
+  padding: 10px 20px;
+  background-color: #dbeaf8c2;
 }
 
 .menu li a:hover, .menu li a:active {
   color: #fff;
-  text-shadow: 0 0 10px #1da3ac;
+  text-shadow: 0 0 10px #cfe2f1;
+  background-color: #035272;
 }
 
 .hambergerIcon {
@@ -224,7 +229,7 @@ i {
   width: 30px;
   margin: 3px 0;
   border-radius: 1px;
-  background: #1da3ac;
+  background: #035272;
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
@@ -279,6 +284,7 @@ i {
   }
   .menu li a {
     font-size: 18pt;
+    background-color: unset;
   }
   .menu .hamburgerMenu {
     display: -webkit-box;
@@ -300,7 +306,7 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #1da3ac;
+  color: #cfe2f1;
 }
 
 .intro h3 {
@@ -311,7 +317,7 @@ i {
 
 .intro h2 {
   font-size: 45pt;
-  text-shadow: 2px 2px 10px #1da3ac;
+  text-shadow: 2px 2px 10px #cfe2f1;
   color: #fff;
   margin-bottom: 10px;
 }
@@ -328,7 +334,7 @@ i {
 }
 
 .nextPage i {
-  color: #1da3ac;
+  color: #cfe2f1;
   display: inline-block;
   padding: 3px 5px;
   line-height: 10px;
@@ -339,23 +345,23 @@ i {
 
 .nextPage i:hover {
   color: #fff;
-  text-shadow: 0 0 10px #1da3ac;
+  text-shadow: 0 0 10px #cfe2f1;
   font-size: 36pt;
 }
 
 /**----Header End----**/
 #about {
-  background: #1da3ac;
+  background: #cfe2f1;
 }
 
 #about h2 {
   color: #fff;
-  text-shadow: 2px 2px 10px #1b99a2;
+  text-shadow: 2px 2px 10px #587e88;
 }
 
 #about .h2Line {
-  background-image: -webkit-gradient(linear, left top, right top, from(#1da3ac), to(#616060));
-  background-image: linear-gradient(left, #1da3ac, #616060);
+  background-image: -webkit-gradient(linear, left top, right top, from(#cfe2f1), to(#605e5e));
+  background-image: linear-gradient(left, #cfe2f1, #605e5e);
 }
 
 .experience {
@@ -366,9 +372,9 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0 5%;
@@ -376,7 +382,7 @@ i {
 
 .experience ul {
   margin-left: 9%;
-  color: #fff;
+  color: #605e5e;
 }
 
 .experience li {
@@ -386,18 +392,18 @@ i {
 
 .experience h3 {
   display: inline-block;
-  color: #616060;
+  color: #dbeaf8;
   margin-bottom: 7px;
   padding: 7px 10px;
-  -webkit-box-shadow: 5px 5px 5px #1b99a2;
-          box-shadow: 5px 5px 5px #1b99a2;
+  -webkit-box-shadow: 5px 5px 5px #587e88;
+          box-shadow: 5px 5px 5px #587e88;
   border-radius: 1px 7px 7px 7px;
-  background: #cadee1;
+  background: #035272;
 }
 
 .experience span {
   display: block;
-  color: #cadee1;
+  color: #035272;
   letter-spacing: .08em;
 }
 
@@ -440,17 +446,17 @@ i {
 }
 
 .mypicName {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  position: relative;
+  margin-bottom: 150px;
+}
+
+.mypicName img {
   width: 286px;
-  margin-top: 3%;
 }
 
 @media (max-width: 900px) {
   .mypicName {
     margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 
@@ -462,7 +468,7 @@ i {
 
 /**----Skill Start----**/
 #skill {
-  background: #cadee1;
+  background: #035272;
 }
 
 #skill .content {
@@ -501,8 +507,8 @@ i {
   left: 39.5px;
   top: 0;
   bottom: 0;
-  -webkit-box-shadow: 2px 2px 6px #616060;
-          box-shadow: 2px 2px 6px #616060;
+  -webkit-box-shadow: 2px 2px 6px #605e5e;
+          box-shadow: 2px 2px 6px #605e5e;
   z-index: 0;
 }
 
@@ -510,15 +516,15 @@ i {
   width: 28px;
   height: 28px;
   border-radius: 28px;
-  -webkit-box-shadow: 2px 2px 6px #616060;
-          box-shadow: 2px 2px 6px #616060;
+  -webkit-box-shadow: 2px 2px 6px #605e5e;
+          box-shadow: 2px 2px 6px #605e5e;
   left: 27px;
   z-index: 3;
 }
 
 .skillTree .skillActive .proficiency {
-  -webkit-box-shadow: 2px 2px 6px #616060;
-          box-shadow: 2px 2px 6px #616060;
+  -webkit-box-shadow: 2px 2px 6px #605e5e;
+          box-shadow: 2px 2px 6px #605e5e;
 }
 
 .skillTree .skillActive .explain {
@@ -548,9 +554,9 @@ i {
   height: 82px;
   border-radius: 90px;
   border: 5px solid #fff;
-  background: #ededed;
-  -webkit-box-shadow: 2px 2px 6px #616060;
-          box-shadow: 2px 2px 6px #616060;
+  background: #dbeaf8;
+  -webkit-box-shadow: 2px 2px 6px #605e5e;
+          box-shadow: 2px 2px 6px #605e5e;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
@@ -565,12 +571,12 @@ i {
           box-sizing: border-box;
   padding-left: 50px;
   padding-top: 5px;
-  color: #cadee1;
+  color: #035272;
   border: 5px solid #fff;
   border-radius: 0 82px 82px 0;
-  background: #1da3ac;
-  -webkit-box-shadow: 2px 2px 6px #ededed;
-          box-shadow: 2px 2px 6px #ededed;
+  background: #cfe2f1;
+  -webkit-box-shadow: 2px 2px 6px #dbeaf8;
+          box-shadow: 2px 2px 6px #dbeaf8;
   position: absolute;
   left: 41px;
   z-index: 0;
@@ -586,10 +592,10 @@ i {
   -webkit-transition: .3s;
   transition: .3s;
   padding: 10px 15px;
-  background: #ededed;
-  color: #616060;
-  -webkit-box-shadow: 3px 3px 10px #616060;
-          box-shadow: 3px 3px 10px #616060;
+  background: #dbeaf8;
+  color: #605e5e;
+  -webkit-box-shadow: 3px 3px 10px #605e5e;
+          box-shadow: 3px 3px 10px #605e5e;
   border-radius: 15px 15px 15px 2px;
   position: absolute;
   z-index: 3;
@@ -616,8 +622,8 @@ i {
 }
 
 .workExample li:mhover, .workExample li:active {
-  -webkit-box-shadow: 2px 2px 6px #616060;
-          box-shadow: 2px 2px 6px #616060;
+  -webkit-box-shadow: 2px 2px 6px #605e5e;
+          box-shadow: 2px 2px 6px #605e5e;
 }
 
 .workExample li .imgHover {
@@ -637,7 +643,7 @@ i {
 }
 
 .workExample h4 > a {
-  color: #616060;
+  color: #605e5e;
   line-height: 2em;
   padding: 3px 20px;
   border-radius: 40px;
@@ -646,8 +652,8 @@ i {
 }
 
 .workExample h4 > a:hover, .workExample h4 > a:active {
-  text-shadow: 0 0 2px #cadee1;
-  color: #1da3ac;
+  text-shadow: 0 0 2px #035272;
+  color: #cfe2f1;
 }
 
 .workExample a {
@@ -655,7 +661,7 @@ i {
   padding: 3px;
   margin: 0 4px;
   font-size: 18pt;
-  color: #616060;
+  color: #605e5e;
 }
 
 .workExample a i {
@@ -669,12 +675,12 @@ i {
 }
 
 .workExample a:hover > i {
-  -webkit-box-shadow: 0 0 5px #616060;
-          box-shadow: 0 0 5px #616060;
+  -webkit-box-shadow: 0 0 5px #605e5e;
+          box-shadow: 0 0 5px #605e5e;
   border: none;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  background: #1b99a2;
+  background: #587e88;
   color: #fff;
 }
 
@@ -704,23 +710,26 @@ i {
 
 /**----Work End----**/
 #contact {
-  background: #616060;
+  background: #605e5e;
 }
 
 #contact h2 {
   color: #fff;
-  text-shadow: 2px 2px 10px #616060;
+  text-shadow: 2px 2px 10px #605e5e;
 }
 
 #contact .h2Line {
-  background-image: -webkit-gradient(linear, left top, right top, from(#616060), to(#1da3ac));
-  background-image: linear-gradient(left, #616060, #1da3ac);
+  background-image: -webkit-gradient(linear, left top, right top, from(#605e5e), to(#cfe2f1));
+  background-image: linear-gradient(left, #605e5e, #cfe2f1);
 }
 
 .contentMessage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   color: #fff;
 }
@@ -733,7 +742,7 @@ i {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  width: 40%;
+  width: 90%;
   margin: 0 2%;
   font-size: 14pt;
   line-height: 2em;
@@ -770,8 +779,8 @@ i {
 .derectionLine {
   width: 99%;
   height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#1da3ac));
-  background-image: linear-gradient(left, #fff, #1da3ac);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#cfe2f1));
+  background-image: linear-gradient(left, #fff, #cfe2f1);
   margin: 10px  0;
 }
 
@@ -792,16 +801,16 @@ i {
   -webkit-transition: .5s;
   transition: .5s;
   border-radius: 5px;
-  border: 1px solid #1da3ac;
+  border: 1px solid #cfe2f1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .github a:hover {
   color: #fff;
-  background: #1da3ac;
-  -webkit-box-shadow: 1px 1px 3px #616060 inset, 1px 1px 3px #000;
-          box-shadow: 1px 1px 3px #616060 inset, 1px 1px 3px #000;
+  background: #cfe2f1;
+  -webkit-box-shadow: 1px 1px 3px #605e5e inset, 1px 1px 3px #000;
+          box-shadow: 1px 1px 3px #605e5e inset, 1px 1px 3px #000;
 }
 
 .contactForm {
@@ -830,7 +839,7 @@ i {
 .contactForm button {
   font-size: 12pt;
   letter-spacing: .05em;
-  background: #616060;
+  background: #605e5e;
   color: #fff;
   padding: 10px 20px 10px 18px;
   border-radius: 5px;
@@ -840,19 +849,19 @@ i {
 }
 
 .contactForm .send {
-  border: 1px solid #1da3ac;
+  border: 1px solid #cfe2f1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .contactForm .send:hover {
-  background: #1da3ac;
-  -webkit-box-shadow: 1px 1px 3px #616060 inset, 1px 1px 3px #000;
-          box-shadow: 1px 1px 3px #616060 inset, 1px 1px 3px #000;
+  background: #cfe2f1;
+  -webkit-box-shadow: 1px 1px 3px #605e5e inset, 1px 1px 3px #000;
+          box-shadow: 1px 1px 3px #605e5e inset, 1px 1px 3px #000;
 }
 
 .contactForm .reset {
-  border: 1px solid #cadee1;
+  border: 1px solid #035272;
   -webkit-transition: 1s;
   transition: 1s;
   float: right;
@@ -880,33 +889,33 @@ i {
 .lanTab {
   margin: 20px auto;
   background: #fff;
-  -webkit-box-shadow: 2px 2px 10px #616060;
-          box-shadow: 2px 2px 10px #616060;
+  -webkit-box-shadow: 2px 2px 10px #605e5e;
+          box-shadow: 2px 2px 10px #605e5e;
   border: 30px solid #fff;
 }
 
 .lanTab td {
   padding: 10px 20px;
   margin: 20px;
-  border-bottom: 2px dashed #ededed;
+  border-bottom: 2px dashed #dbeaf8;
 }
 
 .lanTab h3 {
   font-size: 14pt;
-  color: #616060;
+  color: #605e5e;
   line-height: 36pt;
 }
 
 .lanTab span {
   font-size: 12pt;
-  color: #1da3ac;
+  color: #587e88;
 }
 
 .lanTab i {
-  color: #1da3ac;
+  color: #587e88;
   font-size: 14pt;
   margin-right: 5px;
-  text-shadow: 2px 2px 5px #ededed;
+  text-shadow: 2px 2px 5px #dbeaf8;
 }
 
 @media (max-width: 500px) {

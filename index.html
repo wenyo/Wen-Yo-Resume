@@ -18,7 +18,7 @@
     <meta property="og:image" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <link rel="stylesheet" href="./dist/style/all.min.css">
+    <link rel="stylesheet" href="./css/min/all.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
 </head>
@@ -67,7 +67,9 @@
                 <h2>About</h2>
                 <div class="h2Line"></div>
                 <div class="experience">
-                    <img src="./images/selfie.png" alt="" class="mypicName">
+                    <div class="mypicName">
+                        <img src="./images/selfie.png" alt="">
+                    </div>
                     <ul>
                         <li>
                             <div class="circle"></div>
@@ -79,12 +81,18 @@
                             <div class="circle"></div>
                             <div class="timeline"></div>
                             <h3><i class="fas fa-building"></i>Work</h3>
-                            <p><span>2018.01 - 2018.09 </span>宏越數位有限公司 平面設計師，職責包含商品圖設計製作、行銷通路廣告文宣設計、手機殼新品設計。</p>
+                            <p><span>2018.01 - 2018.09 </span>宏越數位有限公司 平面設計師<br/>職責包含商品圖設計製作、行銷通路廣告文宣設計、手機殼新品設計。</p>
                         </li>
                         <li>
                             <div class="circle"></div>
+                            <div class="timeline"></div>
                             <h3><i class="fas fa-desktop"></i>Learning</h3>
-                            <p><span>2018.10 - 2019.03 </span>全職學習網頁前端。學習了HTML、CSS、SCSS、RWD、JavaScript，目前學習Vue.js中</p>
+                            <p><span>2018.10 - 2019.04 </span>全職學習網頁前端。學習了HTML、CSS、SCSS、RWD、JavaScript，目前學習Vue.js中</p>
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h3><i class="fas fa-building"></i>Work</h3>
+                            <p><span>2019.04 - </span>台中教育大學 前端工程師</br>維護</p>
                         </li>
                     </ul>                     
                 </div>
@@ -171,18 +179,18 @@
                         <div class="personInfo">
                             <p><i class="fas fa-user"></i>游惠文 WenYo</p>
                             <p><i class="fas fa-envelope"></i>wenda897436@gmail.com</p>
-                            <p><i class="fas fa-map-marker-alt locate"></i>Changhua 彰化縣</p>
+                            <p><i class="fas fa-map-marker-alt locate"></i>台中市</p>
                             <p class="github"><a href="https://github.com/wenyo" target="_blank"><i class="fab fa-github"></i>GitHub</a></p>                            
                         </div>
                     </div>
                     
-                    <form class="contactForm" action="MAILTO:wenda897436@gmail.com?subject=Hello! Wen!" method="post" enctype="text/plain">
+                    <!-- <form class="contactForm" action="MAILTO:wenda897436@gmail.com?subject=Hello! Wen!" method="post" enctype="text/plain">
                         <input type="text" placeholder="Name" required>
                         <input type="text" placeholder="Your Email" required>
                         <textarea name="" id="" placeholder="Message"></textarea>
                         <button class="send" type="send"><i class="fa fa-paper-plane"></i>Send</button>
                         <button class="reset" type="reset"><i class="fas fa-times"></i>RESET</button>
-                    </form>
+                    </form> -->
                 </div>
 
                 <div class="clear"></div>                                    
@@ -199,6 +207,7 @@
     </div>
 
 
+    <script src="./js/data.js"></script>
     <script src="./js/all.js"></script>
 </body>
 </html>

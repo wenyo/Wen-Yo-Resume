@@ -32,9 +32,10 @@ h4{
 .h2Line{
     width: 80px;
     height: 2px;
-    background-image: linear-gradient(left,$color-for,$color-master);
+    background-image: linear-gradient(left,$color-for,$color-thir);
     margin: 20px auto;
     margin-bottom: 50px;
+    border-radius: 2px;
 }
 
 .clear{
