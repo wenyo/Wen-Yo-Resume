@@ -15,34 +15,31 @@
 .experience{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 0 5%;
-    ul{
-        margin-left: 9%;
+    &>ul{
         color: $color-fiv;
-    }
-    li{
-        position: relative;
-        margin-bottom: 40px;
+        width: 50%;
+        &>li{
+            position: relative;
+            margin-bottom: 40px;
+        }
     }
     h3{
         display: inline-block;
-        color: $color-sec;
+        color: $color-thir;
         margin-bottom: 7px;
         padding: 7px 10px;
-        box-shadow: 5px 5px 5px $color-six;  
-        border-radius: 1px 7px 7px 7px; 
-        background: $color-thir;  
     }
-        span{
-            display: block;
-            color: $color-thir;
-            letter-spacing: .08em;
-        }
     p{
         font-size: $fntSiz-xs;
         line-height: 2em;
+    }
+
+    .skill{
+        color: $color-9;
+        padding: 5px 0;
     }
 
     .circle{
@@ -60,24 +57,46 @@
         left: -40px;
         z-index: 0;
     }
-    @include pc700(){
+    @include pc900(){
         flex-direction: column;
-        align-items: center;
-        ul{
-            margin-left: 50px;
-            margin-top: 50px;
+        align-items: flex-start;
+        padding: 0 8%;
+        &>ul{
+            color: $color-fiv;
+            width: 100%;
         }
     }
 }
 
-.mypicName{
+.experience_date{
+    display: block;
+    color: $color-thir;
+    letter-spacing: .08em;
+}
+
+.experience_content{
+    width: 75%;
+    background: $color-for;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 1px 10px 10px 10px;
+    box-shadow: 3px 3px 5px $color-10;
+    color: $color-13;
+    li{
+        margin: 15px;
+        list-style-type: circle;
+        line-height: 1.3em;
+        // list-style-position: inside;
+    }
+}
+
+.myArticle{
     margin-bottom: 150px;
     img{
         width: 286px;
     }
     @include pc900(){
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin: 5% 0;
     }
     @include pc700(){
         margin-top:0;

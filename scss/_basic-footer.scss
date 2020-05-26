@@ -19,7 +19,6 @@ h2{
     color: $color-fiv;
     font-weight: bold;
     text-align: center;
-    text-shadow: 2px 2px 10px $color-sec;
 }
 
 h3{
@@ -50,6 +49,10 @@ h4{
 
 i{
     margin-right: 10px;
+}
+
+.hightLight{
+    background-image: linear-gradient(to top, $color-12 50%, $color-11 50.1%);
 }
 
 .footer{

@@ -1,10 +1,48 @@
 //--** Header CSS Start **--//
+let iHeightScreen = 0;
+const iMinWidth = 900;
+let iWidthScreen = 0;
+const menu = document.querySelector('.menu')
+
 function changeBannerHeight(){
+    iHeightScreen = document.documentElement.clientHeight;
+    iWidthScreen = document.documentElement.clientWidth;
+
     const banner = document.querySelector('.header .content');
-    banner.style.height =  (document.documentElement.clientHeight) + 'px';
+    banner.style.height =  iHeightScreen + 'px';
+    if( iWidthScreen < iMinWidth ){
+        menu.classList.remove('notTop');
+    }
+
 }
 changeBannerHeight();
+checkMenuPos();
 window.onresize = changeBannerHeight;
+
+// listener for menu
+function checkMenuPos(){
+    if( iWidthScreen <= iMinWidth ){
+        var iScrollY = window.scrollY;
+        const hamberger_top = document.querySelector('.hamberger_top')
+
+        console.log(iScrollY);
+        if( !hamberger_top && iScrollY <= iHeightScreen ){
+            menu.classList.add('hamberger_top')
+        }else if( hamberger_top && iScrollY > iHeightScreen ){
+            menu.classList.remove('hamberger_top')
+        }
+    }else{
+        const notTop = document.querySelector('.notTop')
+        if(!notTop && window.scrollY >= iHeightScreen){
+            menu.classList.add('notTop');
+        }else if( notTop && window.scrollY < iHeightScreen){
+            menu.classList.remove('notTop');
+        }        
+    }
+
+
+}
+window.addEventListener('scroll', checkMenuPos);
 
 // HamburderMenu
 const hambergerIcon = document.querySelector('.hambergerIcon');
@@ -135,3 +173,12 @@ for(let i = 0; i < workExampleLi.length; i++){
         }
     },false);
 }
+
+// nextPage
+const sNextPage = document.querySelector('.nextPage i');
+sNextPage.addEventListener( 'click', function(){
+    window.scrollTo({
+        top: iHeightScreen,
+        behavior: 'smooth'
+      });
+});
