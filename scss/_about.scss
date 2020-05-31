@@ -92,6 +92,18 @@
 
 .myArticle{
     margin-bottom: 150px;
+    width: 40%;
+    p{
+        margin: 20px 0;
+        color: $color-14;
+    }
+    .article_hilight{
+        color: $color-thir;
+        font-weight: bold;
+    }
+    a:hover{
+        color: $color-9;
+    }
     img{
         width: 286px;
     }

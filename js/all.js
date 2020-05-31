@@ -25,7 +25,6 @@ function checkMenuPos(){
         var iScrollY = window.scrollY;
         const hamberger_top = document.querySelector('.hamberger_top')
 
-        console.log(iScrollY);
         if( !hamberger_top && iScrollY <= iHeightScreen ){
             menu.classList.add('hamberger_top')
         }else if( hamberger_top && iScrollY > iHeightScreen ){
@@ -33,9 +32,9 @@ function checkMenuPos(){
         }
     }else{
         const notTop = document.querySelector('.notTop')
-        if(!notTop && window.scrollY >= iHeightScreen){
+        if(!notTop && window.scrollY >= (iHeightScreen - 86)){
             menu.classList.add('notTop');
-        }else if( notTop && window.scrollY < iHeightScreen){
+        }else if( notTop && window.scrollY < (iHeightScreen - 86)){
             menu.classList.remove('notTop');
         }        
     }

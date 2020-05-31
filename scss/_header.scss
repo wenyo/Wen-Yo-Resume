@@ -43,6 +43,7 @@
     &.notTop{
         background: $color-master;
         box-shadow: 0 3px 5px $color-six;
+        z-index: 11;
         a{
             color: $color-thir;
             &:hover{

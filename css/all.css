@@ -197,6 +197,7 @@ i {
   background: #cfe2f1;
   -webkit-box-shadow: 0 3px 5px #587e88;
           box-shadow: 0 3px 5px #587e88;
+  z-index: 11;
 }
 
 .menu.notTop a {
@@ -477,6 +478,21 @@ i {
 
 .myArticle {
   margin-bottom: 150px;
+  width: 40%;
+}
+
+.myArticle p {
+  margin: 20px 0;
+  color: #686767;
+}
+
+.myArticle .article_hilight {
+  color: #024058;
+  font-weight: bold;
+}
+
+.myArticle a:hover {
+  color: #0094ff;
 }
 
 .myArticle img {
@@ -497,7 +513,7 @@ i {
 
 /**----Skill Start----**/
 #skill {
-  background: #024058;
+  background: #fff;
 }
 
 #skill .content {
@@ -915,6 +931,10 @@ i {
 }
 
 /**----Language Start----**/
+#language {
+  background-color: #dbeaf8c2;
+}
+
 .lanTab {
   margin: 20px auto;
   background: #fff;
