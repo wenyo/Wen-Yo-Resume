@@ -15,7 +15,7 @@
 .experience{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding: 0 5%;
     &>ul{
@@ -30,7 +30,7 @@
         display: inline-block;
         color: $color-thir;
         margin-bottom: 7px;
-        padding: 7px 10px;
+        padding: ˋpx;
     }
     p{
         font-size: $fntSiz-xs;
