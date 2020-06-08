@@ -34,11 +34,27 @@ const skillData = {
     },
     'Vue.js':{
         'skillItemimg' : './images/vue-logo.png',
-        'proficiency' : 'common',
-        'percentage' : '20%',
+        'proficiency' : 'familiar',
+        'percentage' : '50%',
         'percentagePhone' :'50%',
-        'profiWord' : 'Vue.js<br>( 略懂 )',
-        'explain' : '初步學習  v-model、v-on等。' 
+        'profiWord' : 'Vue.js<br>( 熟悉 )',
+        'explain' : 'Vuex 、 Vue Router 、 Vue CLI' 
+    },
+    'php':{
+        'skillItemimg' : './images/php-logo.png',
+        'proficiency' : 'common',
+        'percentage' : '30%',
+        'percentagePhone' :'50%',
+        'profiWord' : 'php<br>( 略懂 )',
+        'explain' : '' 
+    },
+    'MySQL':{
+        'skillItemimg' : './images/MySQL-logo.png',
+        'proficiency' : 'common',
+        'percentage' : '30%',
+        'percentagePhone' :'50%',
+        'profiWord' : 'MySQL<br>( 略懂 )',
+        'explain' : '熟悉 SELECT 、 UPDATE 、 DELETE 、 INSERT 基本語句' 
     },
 }
 

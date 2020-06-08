@@ -92,6 +92,8 @@ for(const key in skillData){
         }
     }
 }
+
+
 // AddEventListener 
 const skillTreeLi = document.querySelectorAll('.skillTree>ul>li');
 const allProficiency = document.querySelectorAll('.proficiency');

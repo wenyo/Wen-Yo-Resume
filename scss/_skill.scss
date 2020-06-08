@@ -68,6 +68,8 @@
 .skillItem{
     width: 82px;
     height: 82px;
+    display: flex;
+    align-items: center;
     border-radius: 90px;
     border: 5px solid $color-for;
     background: $color-sec;
