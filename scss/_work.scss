@@ -6,55 +6,19 @@
     li{
         width: 47%;
         margin: 1%;
-        text-align: center;
         position: relative;
-        &:mhover,&:active{
-            box-shadow: 2px 2px 6px $color-fiv;
-        }
-        .imgHover{
-            display: none;
-        }
-    }
-    .illustrate{
-        display: none;
-        position: absolute;
-        top:35%;
-        width: 100%;
-    }
-    h4{
-        margin-bottom: 4px;
-        letter-spacing: .3em;
-            &>a{
-            color: $color-fiv;
-            line-height: 2em;
-            padding: 3px 20px;
-            border-radius: 40px;
-            transition: .8s;
-            &:hover,&:active{
-                text-shadow: 0 0 2px $color-thir;
-                color: $color-master;
-            }
+        box-shadow: 2px 2px 5px $color-10;
+        transition: all .3s;
+        border-radius: 5px;
+        overflow: hidden;
+        &:hover,&:active{
+            box-shadow: 2px 2px 20px $color-10;
         }
     }
-    a{
-        text-decoration: none;
-        padding: 3px;
-        margin: 0 4px;
-        font-size: $fntSiz-s;
-        color: $color-fiv;
-        i{
-            transition: .8s;
-            padding: 10px;
-            margin: 0;
-            border-radius: 45px;
-            @include boxsize;
-        }
-        &:hover>i{
-            box-shadow: 0 0 5px $color-fiv;
-            border: none;
-            transform: rotate(360deg);
-            background: $color-six;
-            color: $color-for;
+    img{
+        transition: all .3s;
+        &:hover{
+            box-shadow: 2px 2px 10px $color-10;
         }
     }
     @include pc900(){
@@ -65,14 +29,66 @@
             margin: 3% 0;
         }
     }
-    @include phone500(){
-        .illustrate{
-            top: 25%;
-            h4{
-                font-size: $fntSiz-xxs;
-                letter-spacing: .1em;
-            }
+}
+
+.workInfo{
+    padding: 15px;
+    p{
+        margin-top: 20px;
+        line-height: 1.5em;
+    }
+}
+
+.workTitle{
+    font-size: $fntSiz-s;
+    display: inline-flex;
+    margin: 10px 0;
+}
+
+.workLink{
+    display: inline-flex;
+    justify-content: center;
+    i{
+        margin: 0;
+    }
+    a {
+        font-size: $fntSiz-xs;
+        color: $color-9;
+        margin: 0 3px;
+        padding: 3px;
+        transition: .8s;
+        border-radius: 45px;
+        @include boxsize;
+        &:hover{
+            box-shadow: 0 0 5px $color-fiv;
+            color: $color-for;
+            background-color: $color-9;
+            border: none;
+            transform: rotate(360deg);
         }
     }
 }
+
+.hashtag{
+    margin: 10px 0;
+    span{
+        background-color: $color-sec;
+        font-size: $fntSiz-xxxs;
+        border-radius: 3px;
+        margin-right: 10px;
+        padding: 5px 8px;
+    }
+}
+
+.otherDescribe{
+    font-size: $fntSiz-xxxs;
+    a{
+        color: $color-thir;
+        transition: all .3s;
+        &:hover{
+            background-image: linear-gradient(to top, #ffd921 50%, #00000000 50.1%);
+        }
+    }
+}
+
 /**----Work End----**/

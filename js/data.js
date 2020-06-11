@@ -3,15 +3,15 @@ const skillData = {
     'HTML':{
         'skillItemimg' : './images/html-logo.png',
         'proficiency' : 'master',
-        'percentage': '60%',
+        'percentage': '70%',
         'percentagePhone' : '80%',
-        'profiWord' : 'HTML / HTML5<br>( 擅長 )',
+        'profiWord' : 'HTML / HTML5<br>( 熟悉 )',
         'explain' : '能有效率的使用語意化標籤。'
     },
     'CSS':{
         'skillItemimg' : './images/css-logo.png',
         'proficiency' : 'familiar',
-        'percentage' : '50%',
+        'percentage' : '70%',
         'percentagePhone' :'70%',
         'profiWord' : 'CSS 3 / SCSS<br>( 熟悉 )',
         'explain' : '能撰寫語意化標籤、排版、flexbox。' 
@@ -19,7 +19,7 @@ const skillData = {
     'RWD':{
         'skillItemimg' : './images/rwd-logo.png',
         'proficiency' : 'familiar',
-        'percentage' : '50%',
+        'percentage' : '70%',
         'percentagePhone' :'70%',
         'profiWord' : 'RWD<br>( 熟悉 )',
         'explain' : '能手刻出自適應網頁設計。' 
@@ -27,7 +27,7 @@ const skillData = {
     'JavaScript':{
         'skillItemimg' : './images/javascript-logo.png',
         'proficiency' : 'familiar',
-        'percentage' : '50%',
+        'percentage' : '70%',
         'percentagePhone' :'70%',
         'profiWord' : 'JavaScript<br>( 熟悉 )',
         'explain' : '熟悉DOM模組、 this 、閉包、 AJAX等概念。' 
@@ -35,7 +35,7 @@ const skillData = {
     'Vue.js':{
         'skillItemimg' : './images/vue-logo.png',
         'proficiency' : 'familiar',
-        'percentage' : '50%',
+        'percentage' : '70%',
         'percentagePhone' :'50%',
         'profiWord' : 'Vue.js<br>( 熟悉 )',
         'explain' : 'Vuex 、 Vue Router 、 Vue CLI' 
@@ -43,41 +43,46 @@ const skillData = {
     'php':{
         'skillItemimg' : './images/php-logo.png',
         'proficiency' : 'common',
-        'percentage' : '30%',
+        'percentage' : '50%',
         'percentagePhone' :'50%',
-        'profiWord' : 'php<br>( 略懂 )',
-        'explain' : '' 
+        'profiWord' : 'PHP<br>( 熟悉 )',
+        'explain' : '能閱讀與撰寫 Native PHP' 
     },
     'MySQL':{
         'skillItemimg' : './images/MySQL-logo.png',
         'proficiency' : 'common',
-        'percentage' : '30%',
+        'percentage' : '40%',
         'percentagePhone' :'50%',
         'profiWord' : 'MySQL<br>( 略懂 )',
-        'explain' : '熟悉 SELECT 、 UPDATE 、 DELETE 、 INSERT 基本語句' 
+        'explain' : '能獨立撰寫 SELECT、UPDATE、DELETE、INSERT、JOIN 兩個 table ，撰寫節省效能的語句' 
     },
 }
 
 const workData = {
-    'kaohsiungTraveling':{
-        'name' : '高雄旅遊資訊',
-        'github' : 'https://github.com/wenyo/kaohsiungTraveling',
-        'web' : 'https://wenyo.github.io/kaohsiungTraveling/',
-        'img' : './images/kaohsiungTraveling.png',
-        'imgHover' : './images/kaohsiungTraveling-hover.png',
+    'pomodoro':{
+        'name' : '蕃茄鐘',
+        'github' : 'https://github.com/wenyo/pomodoro_2',
+        'web' : 'https://wenyo.github.io/pomodoro_2/#/',
+        'img' : './images/work/pomodoro.png',
+        'detail': '可記錄待辦事項清單，利用蕃茄鐘的規律，專注25分鐘、休息5分鐘，計算每一項目上花多少時間。',
+        'hashtag':['Vue CLI', 'SCSS'],
     },
-    'BMI':{
-        'name' : '身體質量指數計算',
-        'github' : 'https://github.com/wenyo/BMI-website',
-        'web' : 'https://wenyo.github.io/BMI-website/',
-        'img' : './images/BMI.png',
-        'imgHover' : './images/BMI-hover.png',
+    'maskmap':{
+        'name' : '口罩地圖',
+        'github' : 'https://github.com/wenyo/maskmap',
+        'web' : 'https://wenyo.github.io/maskmap/',
+        'img' : './images/work/maskmap.png',
+        'detail': '銜接政府釋出的口罩 API，藉由位置定位與關鍵字搜尋最近口罩販售點，並可以利用篩選成人/兒童、距離/數量等條件，找出最近可購買的販售點。',
+        'otherDescribe': '*於口‍罩供‍需資‍訊平‍台公開提供民眾查詢。',
+        'otherUrl': 'https://mask.pdis.nat.gov.tw/',
+        'hashtag':['Vue', 'SCSS', 'JSON'],
     },
     'RWD-HomeWork':{
-        'name' : '六角西餐廳',
-        'github' : 'https://github.com/wenyo/RWD-HomeWork',
-        'web' : 'https://wenyo.github.io/RWD-HomeWork/',
-        'img' : './images/RWD-HomeWork.png',
-        'imgHover' : './images/RWD-HomeWork-hover.png',
+        'name' : '飯店預約',
+        'github' : 'https://github.com/wenyo/roombooking2',
+        'web' : 'https://wenyo.github.io/roombooking2/#/',
+        'img' : './images/work/roombooking.png',
+        'detail': '接六角學院釋出的訂房 API，能顯示訂房記錄與預約房間功能。',
+        'hashtag':['Vue CLI', 'Fetch', 'API'],
     }
 };

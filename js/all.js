@@ -105,7 +105,7 @@ for(let i = 0; i < skillTreeLi.length; i++){
     if(document.documentElement.clientWidth > 700){
         thisProficiency.addEventListener('mouseenter',function(e){
             //該節點，開啟Hover & CSS
-            thisProficiency.parentElement.className='skillActive';
+            thisProficiency.parentElement.className =' skillActive';
         },false);
         thisProficiency.addEventListener('mouseleave',function(e){
             // 取消全部的 Hover
@@ -120,7 +120,7 @@ for(let i = 0; i < skillTreeLi.length; i++){
                 skillTreeLi[j].className = '';
             }
             //該節點，開啟Hover & CSS
-            thisProficiency.parentElement.classList ='skillActive';
+            thisProficiency.parentElement.classList = 'skillActive';
         },false);
     }
 };
@@ -137,43 +137,33 @@ for(const key in workData){
     const github = workData[key].github;
     const web = workData[key].web;
     const img = workData[key].img;
-    const imgHover = workData[key].imgHover
+    const detail = workData[key].detail;
+    const vHashtag = workData[key].hashtag;
+    const otherDescribe = workData[key].otherDescribe ? workData[key].otherDescribe : '';
+    const otherUrl = workData[key].otherUrl ? workData[key].otherUrl : '';
+    
+    let sHashtag = '';
+    vHashtag.forEach( skill => {
+        sHashtag += `<span>#${skill}</span>`;
+    });
 
     workExample.innerHTML += `
-    <li class=${key}>
-        <div class="illustrate">
-            <h4><a href="${web}">${name}</a></h4>
-            <a href="${github}" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="${web}" target="_blank"><i class="fas fa-link"></i></a>
+    <li>
+        <a href='${web}' target='_blank'><img src='${img}'></a>
+        <div class='workInfo'>
+            <div class='workTitle'>
+                <div>${name}</div>
+                <div class='workLink'>
+                    <a href='${github}' target='_blank'><i class='fab fa-github'></i></a>
+                    <a href='${web}' target='_blank'><i class='fas fa-link'></i></a>            
+                </div>            
+            </div>
+            <div class='hashtag'>${sHashtag}</div>
+            <p>${detail}</p>
+            <p class='otherDescribe'><a href='otherUrl'>${otherDescribe}</a></p>
         </div>
-        <img class="imgOrg" src="${img}" alt="">
-        <img class="imgHover" src="${imgHover}" alt="">
     </li>`;
 };
-
-// AddEventListener
-const workExampleLi = workExample.querySelectorAll('li');
-for(let i = 0; i < workExampleLi.length; i++){
-    const imgOrg = document.querySelectorAll('.imgOrg');
-    const imgHover = document.querySelectorAll('.imgHover');
-    const illustrate = document.querySelectorAll('.illustrate');
-
-    //該節點，開啟Hover
-    workExampleLi[i].addEventListener('mouseenter',function(e){
-        imgOrg[i].style.display = 'none';
-        imgHover[i].style.display = 'inline';
-        illustrate[i].style.display = 'inline';
-    },false);
-
-    // 離開節點，取消Hover
-    workExampleLi[i].addEventListener('mouseleave',function(e){
-        for(let j = 0; j < workExampleLi.length; j++){
-            imgOrg[j].style.display = 'inline';
-            imgHover[j].style.display = 'none';
-            illustrate[j].style.display = 'none';
-        }
-    },false);
-}
 
 // nextPage
 const sNextPage = document.querySelector('.nextPage i');

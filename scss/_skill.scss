@@ -93,7 +93,7 @@
     box-shadow: 2px 2px 6px $color-sec;
     position: absolute;
     left:41px;
-    z-index: 0;
+    z-index: 1;
     transition: 0.3s;
     @include pointer;
 }
@@ -111,4 +111,7 @@
     position: absolute;
     z-index: 3;
     transition: .5s;
+    min-width: 200px;
+    max-width: 500px;
+    left: 160px;
 }

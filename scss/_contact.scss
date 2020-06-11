@@ -69,7 +69,7 @@
         border: 1px solid $color-master;
         @include boxsize;
         &:hover{
-            color: $color-for;
+            color: $color-thir;
             background: $color-master;
             box-shadow: 1px 1px 3px $color-fiv inset,1px 1px 3px $color-sev;
         }
