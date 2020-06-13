@@ -160,7 +160,7 @@ for(const key in workData){
             </div>
             <div class='hashtag'>${sHashtag}</div>
             <p>${detail}</p>
-            <p class='otherDescribe'><a href='otherUrl'>${otherDescribe}</a></p>
+            <p class='otherDescribe'><a href='${otherUrl}' target='_blank'>${otherDescribe}</a></p>
         </div>
     </li>`;
 };

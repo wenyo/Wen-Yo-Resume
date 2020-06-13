@@ -73,7 +73,7 @@ const workData = {
         'web' : 'https://wenyo.github.io/maskmap/',
         'img' : './images/work/maskmap.png',
         'detail': '銜接政府釋出的口罩 API，藉由位置定位與關鍵字搜尋最近口罩販售點，並可以利用篩選成人/兒童、距離/數量等條件，找出最近可購買的販售點。',
-        'otherDescribe': '*於口‍罩供‍需資‍訊平‍台公開提供民眾查詢。',
+        'otherDescribe': '*於「口‍罩供‍需資‍訊平‍台」公開提供民眾查詢。',
         'otherUrl': 'https://mask.pdis.nat.gov.tw/',
         'hashtag':['Vue', 'SCSS', 'JSON'],
     },
