@@ -553,7 +553,7 @@ i {
 }
 
 .about_image_alert img {
-  width: calc( 100% - 120px);
+  max-width: calc( 100% - 120px);
   max-height: 80vh;
 }
 
