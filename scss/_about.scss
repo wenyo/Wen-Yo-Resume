@@ -142,6 +142,7 @@
     }
     img{
         width: calc( 100% - 120px );
+        max-height: 80vh;
     }
     i{
         font-size: $fntSiz-xl;
