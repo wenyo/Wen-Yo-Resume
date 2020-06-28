@@ -141,7 +141,7 @@
         justify-content: space-between;
     }
     img{
-        max-width: calc( 100% - 120px );
+        min-width: calc( 100% - 120px );
         max-height: 80vh;
     }
     i{
