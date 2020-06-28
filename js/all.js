@@ -173,3 +173,53 @@ sNextPage.addEventListener( 'click', function(){
         behavior: 'smooth'
       });
 });
+
+// about_image
+const sAboutImage = document.querySelectorAll('.about_image');
+const sAboutImageAlert = document.querySelector('.about_image_alert');
+const sAboutImageShow = document.querySelector('.about_image_alert img');
+const cloes_image = document.querySelector('.cloes_image');
+const pre_image = document.querySelector('.pre_image');
+const next_image = document.querySelector('.next_image');
+const sImgIdx = document.querySelector('.iImgIdx');
+
+let iImgIdx = 0;
+let sType = '';
+let iTypeLen = 0;
+
+sAboutImage.forEach( aboutImgType => {
+    const sAboutImageVal = aboutImgType.dataset.img;
+    const iImgLen = aboutImg[sAboutImageVal].length;
+    aboutImgType.firstChild.append(iImgLen);
+
+    // 監聽
+    aboutImgType.addEventListener('click', function(){
+        sAboutImageAlert.classList.remove('noShow');
+        sType = sAboutImageVal;
+        iTypeLen = aboutImg[sType].length;
+
+        iImgIdx = 0;
+        showAboutImg();
+    })
+});
+
+cloes_image.addEventListener('click', function(){
+    sAboutImageAlert.classList.add('noShow');
+});
+
+pre_image.addEventListener('click', function(){
+    iImgIdx -= 1;
+    iImgIdx = iImgIdx > -1 ? iImgIdx : ( iTypeLen - 1 );
+    showAboutImg();
+});
+
+next_image.addEventListener('click', function(){
+    iImgIdx += 1;
+    iImgIdx = iImgIdx < iTypeLen ? iImgIdx : 0;
+    showAboutImg();
+});
+
+function showAboutImg(){
+    sAboutImageShow.src = aboutImg[sType][iImgIdx];
+    sImgIdx.innerHTML = iImgIdx+1;
+}

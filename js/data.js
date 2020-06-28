@@ -1,4 +1,16 @@
 // --**Data**--//
+const aboutImg = {
+    'discuss' : [
+        './images/about/discuss1.png',
+        './images/about/discuss2.png'
+    ],
+    'report' : [
+        './images/about/report1.png',
+        './images/about/report2.png',
+        './images/about/report3.png',
+    ]
+}
+
 const skillData = {
     'HTML':{
         'skillItemimg' : './images/html-logo.png',
